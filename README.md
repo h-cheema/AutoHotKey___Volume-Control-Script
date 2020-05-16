@@ -1,9 +1,8 @@
 # AutoHotKey Volume Control Script  
 
-
 &nbsp;
 ## Overview
-This script is a modified version of CinnTech's volume .ahk script. [CinnTech's YouTube Channel](https://www.youtube.com/channel/UC5c-tua8oh8QUlmXls9AjvQ)  
+This script is a modified version of CinnTech's volume .ahk script. [(CinnTech's YouTube Channel)](https://www.youtube.com/channel/UC5c-tua8oh8QUlmXls9AjvQ)  
 I've made a few changes to the formatting and allowed microphone muting. I also wanted to add an overview of how to use it.
 
 
@@ -24,7 +23,7 @@ Running the script:
 1. Double click the script or right click it and click the option "Run Script".  
 
 
-Setting up the script to auto turn when windows starts:
+Setting up the script to auto run when windows starts:
 1. Hold the "windows key" + "r key" to open the "run" dialog.
 1. In the dialog box, enter "shell: startup" and click the OK button.
 1. Place the script file in this startup folder.
@@ -32,17 +31,24 @@ Setting up the script to auto turn when windows starts:
 
 &nbsp;
 ## Why use this script?
-* This script saved me a lot of time and effort whenever I had to change my volume, switch between speakers and headphones, or mute my microphone, headphones or speakers. I wanted to share this with others so they could benefit from it too.
+* This script has saved me a lot of time and effort whenever I've had to change my volume, switch between speakers and headphones, and mute my microphone, headphones or speakers. I did these actions several times a day and it was usually a tedious process until I started using this script. I wanted to share this with others so they could benefit from it too.
 
 
 &nbsp;
 ## How to use this script
-* Winkey + Scroll mouse wheel up = increase volume
-* Winkey + Scroll mouse wheel down = decrease volume
-* Winkey + Pressing mouse wheel = mute speakers
-* Winkey + z = Mute microphone
+Once the script is installed and running, these are the default key-combos to activate the shortcuts. They can be changed to your preference by editing the script with notepad or an IDE. (Check the section "Modifying this script")
 
+LEGEND: Winkey = Windows Key
+* [Winkey] + [Scroll mouse wheel up] = Increase headphones/speaker volume
+* [Winkey] + [Scroll mouse wheel down] = Decrease headphones/speaker volume
+* [Winkey] + [Pressing mouse wheel] = Mute headphones/speaker
+* [Winkey] + [z] = Mute/Unmute microphone
+
+###### Note: Every time the audio device is changed or the microphone is muted, a text notification will display in the bottom right of your screen and fade away within 2 seconds. The notifications do no appear for volume adjustment nor for muting the headphones/speakers since windows does this already.
 
 &nbsp;
 ## How I use this script:
 * I have a USB sound card (plugged into the rear of my computer) for my desktop speakers, and I use the built in headphone jack in the front of my computer for my headphones and microphone. Whenever I wanted to switch between headphones and speakers, I had to either unplug my headphones from the jack, or change the device from the windows task bar speaker icon. This script turned all of that process into a single click.
+
+&nbsp;
+## Modifying this script
