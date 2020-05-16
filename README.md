@@ -2,8 +2,8 @@
 
 &nbsp;
 ## Overview
-This script is a modified version of CinnTech's volume .ahk script. [(CinnTech's YouTube Channel)](https://www.youtube.com/channel/UC5c-tua8oh8QUlmXls9AjvQ)  
-I've made a few changes to the formatting and allowed microphone muting. I also wanted to add an overview of how to use it.
+This script is a modified version of this script: https://obrienlabs.net/use-autohotkey-toggle-default-playback-sound-device/ by https://obrienlabs.net/
+I added a few features like microphone muting volume adjustment, code documentation and a complete overview of the script.
 
 
 &nbsp;
