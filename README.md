@@ -8,6 +8,7 @@ I've made a few changes to the formatting and allowed microphone muting. I also 
 
 &nbsp;
 ## Requirements 
+* Windows
 * [AutoHotKey](https://www.autohotkey.com/)  
 * [Nircmd.exe](https://www.nirsoft.net/utils/nircmd.html)  
 * [SoundVolumeView.exe](https://www.nirsoft.net/utils/sound_volume_view.html)
@@ -15,6 +16,9 @@ I've made a few changes to the formatting and allowed microphone muting. I also 
 
 &nbsp;
 ## Installation
+Before you start, you have to make sure your system's audio devices are named correctly.  
+![alt text](./ignoreThisFolder/img_code_deviceNames.png?raw=true "Device Names")
+
 Running the script:
 1. Download and install ["AutoHotKey"](https://www.autohotkey.com/)
 1. Download both ["Nircmd.exe"](https://www.nirsoft.net/utils/nircmd.html) and ["SoundVolumeView.exe"](https://www.nirsoft.net/utils/sound_volume_view.html)  
@@ -52,3 +56,10 @@ LEGEND: Winkey = Windows Key
 
 &nbsp;
 ## Modifying this script
+Changing which keys do what:
+![alt text](./ignoreThisFolder/img_code_keys.png?raw=true "Keys")
+The complete list of keys and actions you can use can be found here: https://www.autohotkey.com/docs/KeyList.htm
+
+&nbsp;
+## Support
+If you have any questions or inquiries about this script, you can reach me at cheejin.h@gmail.com
