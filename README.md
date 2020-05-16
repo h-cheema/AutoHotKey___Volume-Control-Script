@@ -2,7 +2,7 @@
 
 &nbsp;
 ## Overview
-This script is a modified version of this script: https://obrienlabs.net/use-autohotkey-toggle-default-playback-sound-device/ by https://obrienlabs.net  
+This script is a modified version of this script: https://obrienlabs.net/use-autohotkey-toggle-default-playback-sound-device  
 I added a few features like microphone muting, volume adjustment, code documentation and a complete overview of the script.
 
 
@@ -17,7 +17,7 @@ I added a few features like microphone muting, volume adjustment, code documenta
 &nbsp;
 ## Installation
 Before you start, you have to make sure your system's audio devices are named correctly.  
-![There should be an image here... Looks like it's missing](./ignoreThisFolder/img_code_deviceNames.jpg?raw=true "Device Names")
+> ![There should be an image here... Looks like it's missing](./ignoreThisFolder/img_code_deviceNames.jpg?raw=true "Device Names")
 
 Installing and running the script:
 1. Download and install ["AutoHotKey"](https://www.autohotkey.com/)
@@ -31,6 +31,7 @@ Setting up the script to auto run when windows starts:
 1. Hold the "windows key" + "r key" to open the "run" dialog.
 1. In the dialog box, enter "shell: startup" and click the OK button.
 1. Place the script file in this startup folder.
+> <img src="./ignoreThisFolder/img_startup.jpg" height="150">
 
 
 &nbsp;
@@ -42,7 +43,7 @@ Setting up the script to auto run when windows starts:
 ## How to use this script
 Once the script is installed and running, these are the default key-combos to activate the shortcuts. They can be changed to your preference by editing the script with notepad or an IDE. (Check the section "Modifying this script")
 
-LEGEND: Winkey = Windows Key
+LEGEND: Winkey = ["Windows Key"](./ignoreThisFolder/img_winkey.jpg)
 * [Winkey] + [Scroll mouse wheel up] = Increase headphones/speaker volume
 * [Winkey] + [Scroll mouse wheel down] = Decrease headphones/speaker volume
 * [Winkey] + [Pressing mouse wheel] = Mute headphones/speaker
