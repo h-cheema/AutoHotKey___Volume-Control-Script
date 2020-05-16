@@ -19,7 +19,7 @@ I've made a few changes to the formatting and allowed microphone muting. I also 
 Before you start, you have to make sure your system's audio devices are named correctly.  
 ![alt text](./ignoreThisFolder/img_code_deviceNames.png?raw=true "Device Names")
 
-Running the script:
+Installing and running the script:
 1. Download and install ["AutoHotKey"](https://www.autohotkey.com/)
 1. Download both ["Nircmd.exe"](https://www.nirsoft.net/utils/nircmd.html) and ["SoundVolumeView.exe"](https://www.nirsoft.net/utils/sound_volume_view.html)  
 1. Place the .exe files in C:\Windows\System32\  
