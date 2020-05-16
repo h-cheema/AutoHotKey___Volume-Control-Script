@@ -9,7 +9,7 @@ I added a few features like microphone muting, volume adjustment, code documenta
 &nbsp;
 ## Requirements 
 * Script:
-  * [VolumeControlScript.ahk](./VolumeControlScript.ahk)    
+  * [VolumeControlScript.ahk](./VolumeControlScript.ahk) (Click raw, then press "ctrl + s" to save the text file)
 * Software:
   * [AutoHotKey](https://www.autohotkey.com/)  
   * [Nircmd.exe](https://www.nirsoft.net/utils/nircmd.html)  
