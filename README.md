@@ -2,8 +2,8 @@
 
 &nbsp;
 ## Overview
-This script is a modified version of this script: https://obrienlabs.net/use-autohotkey-toggle-default-playback-sound-device/ by https://obrienlabs.net/
-I added a few features like microphone muting volume adjustment, code documentation and a complete overview of the script.
+This script is a modified version of this script: https://obrienlabs.net/use-autohotkey-toggle-default-playback-sound-device/ by https://obrienlabs.net  
+I added a few features like microphone muting, volume adjustment, code documentation and a complete overview of the script.
 
 
 &nbsp;
