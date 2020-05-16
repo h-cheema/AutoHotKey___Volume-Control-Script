@@ -8,7 +8,7 @@ I added a few features like microphone muting, volume adjustment, code documenta
 
 &nbsp;
 ## Requirements 
-* Windows
+These are very small and safe porgrams.
 * [AutoHotKey](https://www.autohotkey.com/)  
 * [Nircmd.exe](https://www.nirsoft.net/utils/nircmd.html)  
 * [SoundVolumeView.exe](https://www.nirsoft.net/utils/sound_volume_view.html)
