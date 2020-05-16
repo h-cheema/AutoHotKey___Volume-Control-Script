@@ -1,4 +1,5 @@
-# AutoHotKey Volume Control Script
+# AutoHotKey Volume Control Script  
+
 
 &nbsp;
 ## Overview
@@ -7,13 +8,26 @@ I've made a few changes to the formatting and allowed microphone muting. I also 
 
 
 &nbsp;
-## Requirements  
-- [Nircmd.exe](https://www.nirsoft.net/utils/nircmd.html)  
-- [SoundVolumeView.exe](https://www.nirsoft.net/utils/sound_volume_view.html)
+## Requirements 
+* [AutoHotKey](https://www.autohotkey.com/)  
+* [Nircmd.exe](https://www.nirsoft.net/utils/nircmd.html)  
+* [SoundVolumeView.exe](https://www.nirsoft.net/utils/sound_volume_view.html)
 
 
 &nbsp;
 ## Installation
+Running the script:
+1. Download and install ["AutoHotKey"](https://www.autohotkey.com/)
+1. Download both ["Nircmd.exe"](https://www.nirsoft.net/utils/nircmd.html) and ["SoundVolumeView.exe"](https://www.nirsoft.net/utils/sound_volume_view.html)  
+1. Place the .exe files in C:\Windows\System32\  
+1. Download the script: ["Volume Control Script"](https://github.com/h-cheema/Autohotkey-Volume-Control-Script/blob/master/VolumeControlScript.ahk) and place it in a reliable folder like Documents.  
+1. Double click the script or right click it and click the option "Run Script".  
+
+
+Setting up the script to auto turn when windows starts:
+1. Hold the "windows key" + "r key" to open the "run" dialog.
+1. In the dialog box, enter "shell: startup" and click the OK button.
+1. Place the script file in this startup folder.
 
 
 &nbsp;
@@ -27,6 +41,7 @@ I've made a few changes to the formatting and allowed microphone muting. I also 
 * Winkey + Scroll mouse wheel down = decrease volume
 * Winkey + Pressing mouse wheel = mute speakers
 * Winkey + z = Mute microphone
+
 
 &nbsp;
 ## How I use this script:
