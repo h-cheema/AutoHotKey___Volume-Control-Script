@@ -1,8 +1,9 @@
 # AutoHotKey Volume Control Script
-###### This script is a modified version of this script: https://obrienlabs.net/use-autohotkey-toggle-default-playback-sound-device
 
 &nbsp;
 ## Overview
+This script is a modified version of this script: https://obrienlabs.net/use-autohotkey-toggle-default-playback-sound-device  
+
 I added a few features to the base script like microphone muting, volume adjustment, code documentation and a complete overview of the script.
 
 &nbsp;
