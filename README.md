@@ -15,6 +15,18 @@ I added a few features to the base script like microphone muting, volume adjustm
 * I have a USB sound card (plugged into the rear of my computer) for my desktop speakers, and I use the built in headphone jack in the front of my computer for my headphones and microphone. Whenever I wanted to switch between headphones and speakers, I had to either unplug my headphones from the jack or change the device from the windows task bar speaker icon. This script turned all of that process into a single click.
 
 &nbsp;
+## How to use this script
+Once the script is installed and running, these are the default key-combos to activate the shortcuts. They can be changed to your preference by editing the script with notepad or an IDE. (Check the section "Modifying this script")
+
+LEGEND: Winkey = ["Windows Key"](./ignoreThisFolder/img_winkey.jpg)
+* [Winkey] + [Scroll mouse wheel up] = Increase headphones/speaker volume
+* [Winkey] + [Scroll mouse wheel down] = Decrease headphones/speaker volume
+* [Winkey] + [Pressing mouse wheel] = Mute headphones/speaker
+* [Winkey] + [z] = Mute/Unmute microphone
+
+###### Note: Every time the audio device is changed or the microphone is muted, a text notification will display in the bottom right of your screen and fade away within 2 seconds. The notifications do no appear for volume adjustment nor for muting the headphones/speakers since windows does this already.
+
+&nbsp;
 ## Requirements 
 * Script:
   * [VolumeControlScript.ahk](./VolumeControlScript.ahk) (Click raw, then press "ctrl + s" to save the text file)
@@ -41,18 +53,6 @@ Setting up the script to auto run when windows starts:
 1. In the dialog box, enter "shell: startup" and click the OK button.
 1. Place the script file in this startup folder.
 > <img src="./ignoreThisFolder/img_startup.jpg" height="150">
-
-&nbsp;
-## How to use this script
-Once the script is installed and running, these are the default key-combos to activate the shortcuts. They can be changed to your preference by editing the script with notepad or an IDE. (Check the section "Modifying this script")
-
-LEGEND: Winkey = ["Windows Key"](./ignoreThisFolder/img_winkey.jpg)
-* [Winkey] + [Scroll mouse wheel up] = Increase headphones/speaker volume
-* [Winkey] + [Scroll mouse wheel down] = Decrease headphones/speaker volume
-* [Winkey] + [Pressing mouse wheel] = Mute headphones/speaker
-* [Winkey] + [z] = Mute/Unmute microphone
-
-###### Note: Every time the audio device is changed or the microphone is muted, a text notification will display in the bottom right of your screen and fade away within 2 seconds. The notifications do no appear for volume adjustment nor for muting the headphones/speakers since windows does this already.
 
 &nbsp;
 ## Modifying this script
