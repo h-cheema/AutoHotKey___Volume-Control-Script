@@ -1,6 +1,5 @@
-# AutoHotKey Volume Control Script  
-
-This script is a modified version of this script: https://obrienlabs.net/use-autohotkey-toggle-default-playback-sound-device
+# AutoHotKey Volume Control Script
+###### This script is a modified version of this script: https://obrienlabs.net/use-autohotkey-toggle-default-playback-sound-device
 
 &nbsp;
 ## Overview
@@ -8,11 +7,11 @@ I added a few features to the base script like microphone muting, volume adjustm
 
 &nbsp;
 ## Why use this script?
-* I've saved a lot of time and effort whenever I've had to change my volume, switch between speakers and headphones, and mute my microphone, headphones or speakers. I did these actions several times a day and it was a tedious process until I started using this script. I wanted to share this with others so they could benefit from it too.
+I've saved a lot of time and effort whenever I've had to change my volume, switch between speakers and headphones, and mute my microphone, headphones or speakers. I did these actions several times a day and it was a tedious process until I started using this script. I wanted to share this with others so they could benefit from it too.
 
 &nbsp;
 ## Why I use this script:
-* I have a USB sound card (plugged into the rear of my computer) for my desktop speakers, and I use the built in headphone jack in the front of my computer for my headphones and microphone. Whenever I wanted to switch between headphones and speakers, I had to either unplug my headphones from the jack or change the device from the windows task bar speaker icon. This script turned all of that process into a single click.
+I have a USB sound card (plugged into the rear of my computer) for my desktop speakers, and I use the built in headphone jack in the front of my computer for my headphones and microphone. Whenever I wanted to switch between headphones and speakers, I had to either unplug my headphones from the jack or change the device from the windows task bar speaker icon. This script turned all of that process into a single click.
 
 &nbsp;
 ## How to use this script
