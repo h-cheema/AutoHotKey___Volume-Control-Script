@@ -64,5 +64,9 @@ Changing which keys do what:
 The complete list of keys and actions you can use can be found here: https://www.autohotkey.com/docs/KeyList.htm
 
 &nbsp;
+## Known issues:
+* If the selected audio device has no microphone, the microphone-mute button might mute your audio-output instead of muting the input-audio. Although, this shouldn't be a problem because when you switch to an audio device with no microphone, your other microphone device will not be recording anyways.
+
+&nbsp;
 ## Support
 If you have any questions or inquiries about this script, you can reach me at cheejin.h@gmail.com
