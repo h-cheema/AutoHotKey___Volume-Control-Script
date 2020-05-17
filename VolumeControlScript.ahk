@@ -68,10 +68,13 @@ Return
 		soundToggleBox("Headphones")
 	}
 Return
+
+
+
 ; Speakers/Heaphones/Output Controls...
 #WheelUp::Send {Volume_Up 1} 		; #Winkey + Scroll mouse wheel up = increase volume
 #WheelDown::Send {Volume_Down 1} 	; #Winkey + Scroll mouse wheel down = decrease volume
-#MButton::Volume_Mute				; #Winkey + Pressing mouse wheel = mute speakers
+#MButton::Volume_Mute			; #Winkey + Pressing mouse wheel = mute speakers
 
 
 
