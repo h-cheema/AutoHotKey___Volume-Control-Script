@@ -14,6 +14,9 @@ I've saved a lot of time and effort whenever I've had to change my volume, switc
 ## Why and how I use this script:
 I have a USB sound card (plugged into the rear of my computer) for my desktop speakers, and I use the built in headphone jack in the front of my computer for my headphones and microphone. Whenever I wanted to switch between headphones and speakers, I had to either unplug my headphones from the jack or change the device from the windows task bar speaker icon. This script turned all of that process into a single click.
 
+This is the USB sound card I use: https://www.amazon.ca/TROND-External-Adapter-Integrated-Microphone/dp/B07L56C28R/ref=sr_1_7?keywords=sound+card+usb&qid=1589827739&sr=8-7
+It acts as a separate audio device from the built in realtek audio device that handles the standard 3.5mm jacks on my computer. Some other devices you can use include HDMI sound output (from your graphics card or motherboard), PCIe sound cards, usb audio interfaces and so on. You could even find a way to logically separate one audio device into two, but I haven't found a way myself, otherwise I would have done that with the front and rear jacks of my computer.
+
 &nbsp;
 ## How to use this script
 Once the script is installed and running, these are the default key-combos to activate the shortcuts. They can be changed to your preference by editing the script with notepad or an IDE. (Check the section "Modifying this script")
