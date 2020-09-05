@@ -27,12 +27,12 @@ LEGEND: Winkey = ["Windows Key"](./ignoreThisFolder/img_winkey.jpg)
 * [Winkey] + [Pressing mouse wheel] = Mute headphones/speaker
 * [Winkey] + [z] = Mute/Unmute microphone
 
-###### Note: Every time the audio device is changed or the microphone is muted, a text notification will display in the bottom right of your screen and fade away within 2 seconds. The notifications do no appear for volume adjustment nor for muting the headphones/speakers since windows does this already.
+###### Note: Every time the audio device is changed or the microphone is muted, a text notification will display in the bottom right of your screen and fade away within 2 seconds. The notifications do not appear for volume adjustment nor for muting the headphones/speakers since windows does this already.
 
 &nbsp;
 ## Requirements 
 * Script:
-  * [VolumeControlScript.ahk](./VolumeControlScript.ahk) (Click raw, then press "ctrl + s" to save the text file)
+  * [VolumeControlScript.ahk](./VolumeControlScript.ahk) (Download the project repo and use the VolumeControlScript.ahk file)
 * Software:
   * [AutoHotKey](https://www.autohotkey.com/)  
   * [Nircmd.exe](https://www.nirsoft.net/utils/nircmd.html)  
