@@ -52,7 +52,7 @@ Return
 
 ; Change Audio Output Device...
 ; Example: switch between your USB audio interface and your PC's headphone jack)
-#numpadenter::		; Winkey + numpad enter = toggle audio device (Max 2 devices supported right now).
+#enter::		; Winkey + numpad enter = toggle audio device (Max 2 devices supported right now).
 	toggle:=!toggle
 	if toggle
 	{
@@ -72,10 +72,14 @@ Return
 
 
 ; Speakers/Heaphones/Output Controls...
-#WheelUp::Send {Volume_Up 1} 		; #Winkey + Scroll mouse wheel up = increase volume
-#WheelDown::Send {Volume_Down 1} 	; #Winkey + Scroll mouse wheel down = decrease volume
+#WheelUp::Send {Volume_Up 2} 		; #Winkey + Scroll mouse wheel up = increase volume
+#WheelDown::Send {Volume_Down 2} 	; #Winkey + Scroll mouse wheel down = decrease volume
 #MButton::Volume_Mute			; #Winkey + Pressing mouse wheel = mute speakers
 
+
+; Switch between desktops with "ctrl + win + mousescroll"
+#^WheelDown::#^Right
+#^WheelUp::#^Left
 
 
 ; Microphone/Input Muting...
