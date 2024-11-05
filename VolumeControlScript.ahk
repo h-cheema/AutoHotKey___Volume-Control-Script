@@ -27,59 +27,36 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-
-; Display sound toggle GUI...
-soundToggleBox(Device)
-	{
-		IfWinExist, soundToggleWin
-		{
-			Gui, destroy
-		}
-		Gui, +ToolWindow -Caption +0x400000 +alwaysontop
-		Gui, Add, text, x8 y8, Sound: %Device%
-		SysGet, screenx, 0
-		SysGet, screeny, 1
-		xpos:=screenx-275
-		ypos:=screeny-100
-		Gui, Show, NoActivate x%xpos% y%ypos% h30 w200, soundToggleWin
-		SetTimer,soundToggleClose, 2000
-	}
-	soundToggleClose:
-		SetTimer,soundToggleClose, off
-		Gui, destroy
-Return
-
-
-; Change Audio Output Device...
-; Example: switch between your USB audio interface and your PC's headphone jack)
-#enter::		; Winkey + numpad enter = toggle audio device (Max 2 devices supported right now).
-	toggle:=!toggle
-	if toggle
-	{
-		; Uses "nircmd.exe" to adjust volume.
-		; https://www.nirsoft.net/utils/nircmd.html
-		; Download and place the nircmd.exe file in your c:\windows\system32\ folder.
-		Run c:\windows\system32\nircmd.exe setdefaultsounddevice "Speakers"		; Name of the first audio output device in your "sound control panel"
-		soundToggleBox("Speakers")											
-	}
-	else
-	{
-		Run c:\windows\system32\nircmd.exe setdefaultsounddevice "Headphones"	; Name of the other audio output device in your "sound control panel"
-		soundToggleBox("Headphones")
-	}
-Return
-
-
-
 ; Speakers/Heaphones/Output Controls...
 #WheelUp::Send {Volume_Up 2} 		; #Winkey + Scroll mouse wheel up = increase volume
 #WheelDown::Send {Volume_Down 2} 	; #Winkey + Scroll mouse wheel down = decrease volume
 #MButton::Volume_Mute			; #Winkey + Pressing mouse wheel = mute speakers
 
 
-; Switch between desktops with "ctrl + win + mousescroll"
-#^WheelDown::#^Right
-#^WheelUp::#^Left
+
+; Change Audio Output Device...
+; Example: switch between your USB audio interface and your PC's headphone jack)
+#numpadenter::		; Winkey + numpad enter = toggle audio device (Max 2 devices supported right now).
+	toggle:=!toggle
+	if toggle
+	{
+		Run c:\windows\system32\nircmd.exe setdefaultsounddevice "Headphones"	; Name of the other audio output device in your "sound control panel"
+		soundToggleBox("Headphones")
+	}
+	else
+	{
+
+		Run c:\windows\system32\nircmd.exe setdefaultsounddevice "Speakers"		; Name of the first audio output device in your "sound control panel"
+		soundToggleBox("Speakers")											
+	}
+Return
+
+#Backspace::		; Winkey + numpad enter = toggle audio device (Max 2 devices supported right now).
+	toggle:=!toggle
+    	Run c:\windows\system32\nircmd.exe setdefaultsounddevice "Headset"	; Name of the other audio output device in your "sound control panel"
+    	soundToggleBox("Headset")
+Return
+
 
 
 ; Microphone/Input Muting...
@@ -109,4 +86,40 @@ Return
 		Run c:\windows\system32\nircmd.exe beep 660 132
 	}
 	sleep, 200 ; Creates a short pause letting the beeps play completely through.
+Return
+
+
+; Display sound toggle GUI...
+soundToggleBox(Device)
+	{
+		IfWinExist, soundToggleWin
+		{
+			Gui, destroy
+		}
+		Gui, +ToolWindow -Caption +0x400000 +alwaysontop
+		Gui, Add, text, x8 y8, Sound: %Device%
+		SysGet, screenx, 0
+		SysGet, screeny, 1
+		xpos:=screenx-275
+		ypos:=screeny-100
+		Gui, Show, NoActivate x%xpos% y%ypos% h30 w200, soundToggleWin
+		SetTimer,soundToggleClose, 2000
+	}
+	soundToggleClose:
+		SetTimer,soundToggleClose, off
+		Gui, destroy
+Return
+
+
+!PgUp::
+    ; Send Ctrl + Win + Right to go to the next desktop
+	SendInput, {Ctrl Down}{LWin Down}{Right}{LWin Up}{Ctrl Up}
+    Run c:\windows\system32\nircmd.exe beep 1660 100
+Return
+
+
+!PgDn::
+    ; Send Ctrl + Win + Left to go to the previous desktop
+	SendInput, {Ctrl Down}{LWin Down}{Left}{LWin Up}{Ctrl Up}
+    Run c:\windows\system32\nircmd.exe beep 1800 100
 Return
