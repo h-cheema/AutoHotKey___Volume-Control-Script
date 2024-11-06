@@ -111,15 +111,19 @@ soundToggleBox(Device)
 Return
 
 
-!PgUp::
-    ; Send Ctrl + Win + Right to go to the next desktop
+!PgDn::
+	; Send Ctrl + Win + Right to go to the next desktop
 	SendInput, {Ctrl Down}{LWin Down}{Right}{LWin Up}{Ctrl Up}
-    Run c:\windows\system32\nircmd.exe beep 1660 100
 Return
 
 
-!PgDn::
-    ; Send Ctrl + Win + Left to go to the previous desktop
+!PgUp::
+	; Send Ctrl + Win + Left to go to the next desktop
 	SendInput, {Ctrl Down}{LWin Down}{Left}{LWin Up}{Ctrl Up}
-    Run c:\windows\system32\nircmd.exe beep 1800 100
+Return
+
+
+!MButton::
+	; Send Start + Tab to open virtual desktop selection.
+	SendInput, {LWin Down}{Tab}{LWin Up}
 Return
